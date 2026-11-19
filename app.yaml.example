@@ -1,0 +1,19 @@
+runtime: go
+env: flex
+network:
+  name: default
+  subnetwork_name: default
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
+runtime_config:
+  operating_system: "ubuntu22"
+  runtime_version: "1.25"
+# Copy this file to app.yaml and fill in real values before deploying.
+# app.yaml is in .gitignore, so real secrets are never committed.
+env_variables:
+  ES_URL: "http://YOUR_ES_HOST:9200"
+  ES_USERNAME: "your-es-username"
+  ES_PASSWORD: "your-es-password"
+  GCS_BUCKET: "your-gcs-bucket"
+  JWT_SECRET: "a-long-random-string"

@@ -1,0 +1,15 @@
+# Real deploy config and secrets
+app.yaml
+.env
+.env.*
+!.env.example
+*.pem
+*-key.json
+service-account*.json
+
+# Build output and OS files
+/networkai
+*.exe
+.DS_Store
+.idea/
+.vscode/
